@@ -1,4 +1,4 @@
-# AffectsOf.DailyLife.Act.OnWellbeing.with.Nlp
+# ImpactsOf_DailyLifeAct_OnWellbeing
 Measuring impacts of daily life activities on my personal well-being
 Project Overview
 Motivation
