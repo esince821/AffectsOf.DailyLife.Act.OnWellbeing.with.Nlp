@@ -1,4 +1,4 @@
-# ImpactsOf_DailyLifeAct_OnWellbeing
+# ImpactsOf_DailyLifeAct_OnWell-being💖
 Measuring impacts of daily life activities on my personal well-being
 Project Overview
 Motivation
