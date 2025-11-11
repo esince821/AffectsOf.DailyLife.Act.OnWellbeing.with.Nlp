@@ -26,24 +26,24 @@ Questions we address include:
 
 ## Datasets
 
-* Dataset 1: Startup Founders Dataset
+### Dataset 1: Startup Founders Dataset
 * **Name:** Startup Founders Dataset  
 * **Source:** Wellfound (https://wellfound.com)  
 * **Link:** (manually collected data, not publicly downloadable)  
 * **Data Acquisition Method:** Manually collected by browsing startup profiles on Wellfound and recording relevant fields including startup name, number of founders, industry, founded year, and funding stage. The data was exported into a CSV file (`founders.csv`) for analysis.  
 ---
-* Dataset 2: Startup Funding Stage 
+### Dataset 2: Startup Funding Stage 
 * **Name:** Startup Funding Dataset  
 * **Source:** Wellfound (https://wellfound.com)  
 * **Link:** (manually collected data, not publicly downloadable)  
 * **Data Acquisition Method:** Manually gathered from startup pages on Wellfound, focusing on funding stages (Seed, Series A, etc.) and total funding (if listed). Saved as `funding.csv`.  
 ---
-* Dataset 3: Sector or industry of the Startup
+### Dataset 3: Sector or industry of the Startup
 * **Name:** Startup Industry Dataset  
 * **Source:** Wellfound (https://wellfound.com)  
 * **Link:** (manually collected data, not publicly downloadable)  
 * **Data Acquisition Method:** Categorized each startup by its primary industry (e.g., AI, FinTech, HealthTech, EdTech) based on its Wellfound description. Saved as `industry.csv`.  
----
+
 
 **Key Columns:**
 | Column Name     | Description                                  |
