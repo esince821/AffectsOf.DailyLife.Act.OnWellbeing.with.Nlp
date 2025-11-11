@@ -96,13 +96,16 @@ Dataset 3: Sector or industry of the Startup
 - Cross-tabulation: num_founders × funding_stage.
 
 #### 3.2 Visualization Suite
-- Goal	Visualization Type	Tool/Library
-- Founder count distribution	Bar plot / Histogram	matplotlib, seaborn
-- Funding stage proportions	Pie chart / Count plot	seaborn
-- Relationship between founders and funding amount	Boxplot or Violin plot	seaborn
-- Correlation heatmap	Heatmap (funding_amount, founders, age)	seaborn
-- Industry vs founder count	Stacked bar chart	pandas, matplotlib
-- Funding stage vs age	Boxplot	seaborn
+
+| Goal                                             | Visualization Type                      | Tool/Library            |
+| ------------------------------------------------ | --------------------------------------- | ----------------------- |
+| Founder count distribution                       | Bar plot / Histogram                    | `matplotlib`, `seaborn` |
+| Funding stage proportions                        | Pie chart / Count plot                  | `seaborn`               |
+| Relationship between founders and funding amount | Boxplot or Violin plot                  | `seaborn`               |
+| Correlation heatmap                              | Heatmap (funding_amount, founders, age) | `seaborn`               |
+| Industry vs founder count                        | Stacked bar chart                       | `pandas`, `matplotlib`  |
+| Funding stage vs age                             | Boxplot                                 | `seaborn`               |
+
 #### 3.3 Statistical Testing
 
 - ANOVA / Kruskal-Wallis Test: To test if funding amounts differ significantly between groups with different founder counts.
