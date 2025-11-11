@@ -58,7 +58,7 @@ Questions we address include:
 | Column Name     | Description                              |
 |-----------------|------------------------------------------|
 | `startup_name`  | Name of the startup                       |
-| `funding_stage` | Current or highest funding stage (Seed, Series A, etc.) |
+| `funding_stage` | Current funding stage (Seed, Series A, etc.) |
 | `funding_amount`| Total funding raised (numeric, if available) |
 
 #### 3. `industry.csv`
