@@ -1,7 +1,7 @@
 # Founder-Amount-and-Success-in-StartUp
 
 ## Table of Contents
-- [Project Description](#project Description)  
+- [Project Description](#project--description)  
 - [Motivation](#motivation)  
 - [Dataset](#dataset)  
 - [Methods](#methods)  
@@ -10,7 +10,7 @@
 ---
 
 ## Project Description
-This project investigates how the number of founders of a startup correlates with success indicators such as funding stage and longevity.  
+This project investigates how the number of founders of a startup correlates with success indicators such as funding stage(the level of investment a startup has reached, e.g., Seed, Series A, etc.) and longevity.
 Although many startups are founded by two people (often hypothesized as one with technical skills and one with business skills), this analysis aims to validate that pattern using real‑world data.
 
 ---
