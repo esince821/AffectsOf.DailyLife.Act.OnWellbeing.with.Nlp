@@ -3,9 +3,9 @@
 ## Table of Contents
 - [Project Description](#project--description)  
 - [Motivation](#motivation)  
-- [Dataset](#dataset)  
+- [Datasets](#dataset)  
 - [Methods](#methods)  
-- [Results & Discussion](#results--discussion)   
+- [Limitations & Future Work](#limitations--&--future--work)   
 
 ---
 
@@ -178,9 +178,20 @@ Questions we address include:
 |Project Proposal Submission| October 31, 2025|
 
 ---
-## Results & Discussion
-- Expectation: Two‑founder teams are the most common in the dataset.  
-- Preliminary observation: Startups with two founders may show higher average funding or longer survival time compared to solo‑founder or larger teams.  
-- Potential explanations: Complementary skills in two‑person teams, simpler decision making, balanced division of labor.  
-- Limitations: Data may be biased by publicly visible startups (survivorship bias), missing funding data, regional differences.
+## Limitations and Future Work
 
+### Limitations
+- **Manual Data Collection:** The data was manually gathered from Wellfound, which limits sample size and may introduce selection bias (only startups with public profiles are included).  
+- **Missing or Incomplete Fields:** Some startups lacked detailed funding or founder information, reducing data completeness.  
+- **Cross-Sectional Nature:** The dataset represents a single point in time, making it difficult to infer causal relationships between founder count and startup success.  
+- **Uncontrolled Factors:** Other variables such as team experience, product type, market conditions, or geographic region were not included but may influence funding outcomes.  
+- **Approximation in Funding Amounts:** Inconsistent currency formats and missing values required normalization and estimation.
+
+---
+
+### Future Work
+- **Expand Dataset:** Collect a larger and more diverse dataset, including international startups and additional success metrics (e.g., revenue, exit status).  
+- **Automate Data Collection:** Implement web-scraping or API-based collection from platforms like Crunchbase or PitchBook for greater scalability.  
+- **Longitudinal Analysis:** Track startups over multiple years to observe how founder composition affects long-term performance.  
+- **Advanced Modeling:** Apply regression or machine learning models to predict funding success based on founder count and industry.  
+- **Broader Variables:** Incorporate qualitative factors such as founder background, education, and experience for a deeper understanding of team dynamics.
