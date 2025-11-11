@@ -1,7 +1,7 @@
 # Founder-Amount-and-Success-in-StartUp
 
 ## Table of Contents
-- [Project Description](#Project Description)  
+- [Project Description](#project Description)  
 - [Motivation](#motivation)  
 - [Dataset](#dataset)  
 - [Methods](#methods)  
@@ -59,15 +59,15 @@ Dataset 3: Sector or industry of the Startup
 ---
 
 ## Methods
-1. Data Collection
+### 1. Data Collection
 
-Extracted data from Wellfound startup pages.
+- Extracted data from Wellfound startup pages.
 
-Manually recorded structured fields (founder count, funding stage, etc.).
+- Manually recorded structured fields (founder count, funding stage, etc.).
 
-Saved as .csv files for analysis.
+- Saved as .csv files for analysis.
 
-2. Data Cleaning and Preparation
+### 2. Data Cleaning and Preparation
 
 Combined datasets (founders.csv, funding.csv, industry.csv) on startup_name.
 
