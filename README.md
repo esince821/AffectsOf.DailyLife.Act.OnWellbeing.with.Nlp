@@ -59,14 +59,77 @@ Dataset 3: Sector or industry of the Startup
 ---
 
 ## Methods
-The following steps outline the methodology:
-1. **Data collection:** Selected startups, extracted founder count and success metrics.  
-2. **Data cleaning & preparation:** Handled missing values, normalized categories, formatted data.  
-3. **Exploratory data analysis:**  
-   - Calculated descriptive statistics for `num_founders`.  
-   - Plotted distribution of founder counts (histogram/bar chart).  
-   - Examined relationship between `num_founders` and `funding_amount`, and `funding_stage` (scatter plots, boxplots).  
-4. **Interpretation:** Discussed findings in terms of probable business/technical alignment, team size dynamics, and industry context.
+1. Data Collection
+
+Extracted data from Wellfound startup pages.
+
+Manually recorded structured fields (founder count, funding stage, etc.).
+
+Saved as .csv files for analysis.
+
+2. Data Cleaning and Preparation
+
+Combined datasets (founders.csv, funding.csv, industry.csv) on startup_name.
+
+Removed duplicates and startups with missing essential fields (e.g., num_founders).
+
+Standardized funding_stage (e.g., unified “Series-A” and “Series A”).
+
+Converted funding_amount to numeric (removing $, M, K symbols).
+
+Created additional columns:
+
+startup_age = 2025 - founded_year
+
+funding_log = log(funding_amount + 1) (to normalize skewed data).
+
+3. Exploratory Data Analysis (EDA) Pipeline
+
+A more advanced and reproducible EDA pipeline will include:
+
+3.1 Descriptive Statistics
+
+Summary statistics for numeric variables (num_founders, funding_amount, startup_age).
+
+Frequency table for categorical variables (funding_stage, industry).
+
+Cross-tabulation: num_founders × funding_stage.
+
+3.2 Visualization Suite
+Goal	Visualization Type	Tool/Library
+Founder count distribution	Bar plot / Histogram	matplotlib, seaborn
+Funding stage proportions	Pie chart / Count plot	seaborn
+Relationship between founders and funding amount	Boxplot or Violin plot	seaborn
+Correlation heatmap	Heatmap (funding_amount, founders, age)	seaborn
+Industry vs founder count	Stacked bar chart	pandas, matplotlib
+Funding stage vs age	Boxplot	seaborn
+3.3 Statistical Testing
+
+ANOVA / Kruskal-Wallis Test: To test if funding amounts differ significantly between groups with different founder counts.
+
+Chi-Square Test: To test if num_founders and funding_stage are independent.
+
+Correlation Analysis: Between num_founders and funding_amount.
+
+3.4 Feature Engineering (Optional)
+
+Encode categorical variables (funding_stage, industry) numerically.
+
+Create founder_group categories: Solo, Two-Founder, Team (>2).
+
+3.5 Reproducibility
+
+Implement the full EDA in a Jupyter Notebook (eda.ipynb).
+
+Use modular code blocks:
+
+data_cleaning.py
+
+eda_visuals.py
+
+stat_tests.py
+
+Export all figures automatically to a /figures directory.
 
 ---
 
