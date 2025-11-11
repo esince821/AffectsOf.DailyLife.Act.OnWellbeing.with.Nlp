@@ -45,7 +45,7 @@ Questions we address include:
 * **Data Acquisition Method:** Categorized each startup by its primary industry (e.g., AI, FinTech, HealthTech, EdTech) based on its Wellfound description. Saved as `industry.csv`.  
 
 
-**Key Columns:**
+### Key Columns:
 | Column Name     | Description                                  |
 |------------------|----------------------------------------------|
 | `startup_name`   | Name of the company                           |
