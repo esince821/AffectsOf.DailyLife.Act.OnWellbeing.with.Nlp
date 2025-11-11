@@ -45,16 +45,27 @@ Questions we address include:
 * **Data Acquisition Method:** Categorized each startup by its primary industry (e.g., AI, FinTech, HealthTech, EdTech) based on its Wellfound description. Saved as `industry.csv`.  
 
 
-### Key Columns:
-| Column Name     | Description                                  |
-|------------------|----------------------------------------------|
-| `startup_name`   | Name of the company                           |
-| `num_founders`   | Number of founding individuals                |
-| `industry`       | Sector or industry of the startup             |
-| `founded_year`   | Year the startup was founded                  |
-| `funding_stage`  | Current or highest funding stage (Seed, A, B…) |
-| `funding_amount` | Total funding raised (if available)           |
+### Key Columns for Each CSV
 
+#### 1. `founders.csv`
+| Column Name     | Description                              |
+|-----------------|------------------------------------------|
+| `startup_name`  | Name of the startup                       |
+| `num_founders`  | Number of founding individuals           |
+| `founded_year`  | Year the startup was founded             |
+
+#### 2. `funding.csv`
+| Column Name     | Description                              |
+|-----------------|------------------------------------------|
+| `startup_name`  | Name of the startup                       |
+| `funding_stage` | Current or highest funding stage (Seed, Series A, etc.) |
+| `funding_amount`| Total funding raised (numeric, if available) |
+
+#### 3. `industry.csv`
+| Column Name     | Description                              |
+|-----------------|------------------------------------------|
+| `startup_name`  | Name of the startup                       |
+| `industry`      | Sector or industry of the startup (e.g., AI, FinTech, HealthTech, EdTech) |
 
 ---
 
