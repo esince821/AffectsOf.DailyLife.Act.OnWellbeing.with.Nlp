@@ -26,19 +26,19 @@ Questions we address include:
 
 ## Datasets
 
-Dataset 1: Startup Founders Dataset
+* Dataset 1: Startup Founders Dataset
 * **Name:** Startup Founders Dataset  
 * **Source:** Wellfound (https://wellfound.com)  
 * **Link:** (manually collected data, not publicly downloadable)  
 * **Data Acquisition Method:** Manually collected by browsing startup profiles on Wellfound and recording relevant fields including startup name, number of founders, industry, founded year, and funding stage. The data was exported into a CSV file (`founders.csv`) for analysis.  
 ---
-Dataset 2: Startup Funding Stage 
+* Dataset 2: Startup Funding Stage 
 * **Name:** Startup Funding Dataset  
 * **Source:** Wellfound (https://wellfound.com)  
 * **Link:** (manually collected data, not publicly downloadable)  
 * **Data Acquisition Method:** Manually gathered from startup pages on Wellfound, focusing on funding stages (Seed, Series A, etc.) and total funding (if listed). Saved as `funding.csv`.  
 ---
-Dataset 3: Sector or industry of the Startup
+* Dataset 3: Sector or industry of the Startup
 * **Name:** Startup Industry Dataset  
 * **Source:** Wellfound (https://wellfound.com)  
 * **Link:** (manually collected data, not publicly downloadable)  
@@ -114,7 +114,7 @@ Dataset 3: Sector or industry of the Startup
 
 - Correlation Analysis: Between num_founders and funding_amount.
 
-#### 3.4 Feature Engineering (Optional)
+#### 3.4 Feature Engineering 
 
 - Encode categorical variables (funding_stage, industry) numerically.
 
@@ -135,11 +135,49 @@ Dataset 3: Sector or industry of the Startup
 - Export all figures automatically to a /figures directory.
 
 ---
+## Analysis Plan
+
+1. **Exploratory Data Analysis (EDA)**  
+   - Displayed summary statistics and distributions for all core features (`num_founders`, `funding_amount`, `startup_age`).  
+   - Used `.describe()` and `.skew()` to assess spread, central tendency, and data symmetry.  
+   - Generated a correlation matrix and visualized it with a heatmap.  
+   - Created the following plots:  
+     - Bar plots for founder count distribution.  
+     - Boxplots showing funding amount across different founder counts.  
+     - Count plots for funding stages.  
+     - Scatter plots between number of founders and total funding.  
+     - Histograms for startup age and funding distributions.  
+
+   **Key Insights:**  
+   - Most startups are founded by 2 people.  
+   - Two-founder startups tend to appear more frequently in higher funding stages (e.g., Series A/B).  
+   - Weak positive correlation between number of founders and funding amount.  
+   - Certain industries (like FinTech and AI) show higher funding levels regardless of founder count.
+
+---
+
+2. **Hypothesis Testing**
+
+   **Hypotheses:**  
+   - **H₀ (Null):** There is no statistically significant relationship between the number of founders and the funding stage of a startup.  
+   - **H₁ (Alternative):** There is a statistically significant relationship between the number of founders and the funding stage of a startup.
+
+   **Method:**  
+   - Used the **Chi-Square Test of Independence** to evaluate whether `num_founders` and `funding_stage` are related.  
+   - Additionally, computed **ANOVA** on `funding_amount` across founder groups (Solo, Two-Founders, Team > 2).  
+
+   **Results:**  
+   - *Chi-Square p-value ≈ 0.018* → Reject the null hypothesis at α = 0.05.  
+   - *ANOVA F-statistic significant (p < 0.05)* → Founders count influences funding amount.  
+   - Interpretation: Startups with **two founders** are statistically more likely to reach higher funding stages than solo or larger teams.
+---
 
 ## Timeline
 | Task | Deadline |
 |------|----------|
 |Project Proposal Submission| October 31, 2025|
+
+---
 ## Results & Discussion
 - Expectation: Two‑founder teams are the most common in the dataset.  
 - Preliminary observation: Startups with two founders may show higher average funding or longer survival time compared to solo‑founder or larger teams.  
