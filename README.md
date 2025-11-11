@@ -198,6 +198,7 @@ Questions we address include:
 - **Uncontrolled Factors:** Other variables such as team experience, product type, market conditions, or geographic region were not included but may influence funding outcomes.  
 - **Approximation in Funding Amounts:** Inconsistent currency formats and missing values required normalization and estimation.
 
+write this-> in the industry part I too generalized, i.e. wrote fintech for both fintech elec market etc.
 ---
 
 ### Future Work
