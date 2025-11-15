@@ -94,6 +94,9 @@ Questions we address include:
 
   funding_log = log(funding_amount + 1) (to normalize skewed data).
 
+  WHAT DID YOU DO FOR MISSING DATA?
+  HOW DİD YOU GET DATA? WEB SCRAPING
+
 ### 3. Exploratory Data Analysis (EDA) Pipeline
 
 - A more advanced and reproducible EDA pipeline will include:
