@@ -1,4 +1,4 @@
-# Founder-Amount-and-Success-in-StartUp
+# Founder-Number-and-Success-in-StartUp
 
 ## Table of Contents
 - [Project Description](#project--description)  
